@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tangy_Models\Tangy_Models.csproj" />
+    <Folder Include="Data\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <ProjectReference Include="..\Tangy_Models\Tangy_Models.csproj" />
   </ItemGroup>
 
 </Project>

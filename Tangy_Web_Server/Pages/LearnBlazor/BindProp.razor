@@ -1,0 +1,21 @@
+﻿@page "/learnblazor/bindprop"
+<h3>Product</h3>
+
+Name: @Product.Name
+<br />
+Active: @Product.IsActive
+<br />
+Price: @Product.Price
+<br />
+Price : <input type="number" @bind-value="@Product.Price" @bind-value:event="oninput"/>
+
+
+@code {
+    Demo_Product Product = new Demo_Product()
+        {
+            Id = 1,
+            Name = "Rose Candle",
+            IsActive = true,
+            Price = 10.99
+        };
+}
